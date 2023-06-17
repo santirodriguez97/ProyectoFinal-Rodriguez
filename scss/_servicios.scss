@@ -1,0 +1,39 @@
+.servicios-titulo {
+    text-align: center;
+    margin-top: $mg-xl;
+    margin-bottom: $mg-xxl;
+}
+
+.padre-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: $mg-xl;
+    margin-bottom: 50px;
+}
+
+@media (min-width: $desktop) {
+    .padre-cards {
+        min-height: 522px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: $desktop) {
+    .padre-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.card {
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(255, 20, 147, 1);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(255, 20, 147, 1);
+    box-shadow: 0px 0px 11px 3px rgba(255, 20, 147, 1);
+    padding: 10px;
+    @include flex-column-center;
+    gap: 10px;
+}

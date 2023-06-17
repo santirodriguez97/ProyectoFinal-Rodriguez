@@ -1,0 +1,75 @@
+h1 {
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+}
+@media (min-width: $desktop) {
+    nav {
+        font-size: 25px;
+    }
+}
+
+.imagen1 {
+    max-width: 100%;
+}
+
+.imagen1 img {
+    width: 100%;
+}
+
+.imagen2 {
+    max-width: 100%;
+    margin-top: $mg-xxl;
+}
+
+.imagen2 img {
+    width: 100%;
+}
+
+.padre {
+    @include flex-column-center;
+}
+
+@media (min-width: $desktop) {
+    .padre {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+
+.foto1 {
+    margin-top: $mg-xxl;
+}
+
+
+.foto1 img {
+    width: 300px;
+}
+
+.foto2 {
+    margin-top: 45px;
+}
+
+.foto2 h3 {
+    text-align: center;
+    margin-top: -15px;
+}
+
+.foto2 img {
+    width: 310px;
+}
+
+.foto3 {
+    margin-top: 45px;
+}
+
+.foto3 h3 {
+    text-align: center;
+    margin-top: -25px;
+}
+
+.foto3 img {
+    width: 320px;
+
+}

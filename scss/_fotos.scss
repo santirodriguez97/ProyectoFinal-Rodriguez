@@ -1,0 +1,30 @@
+.carousel-item {
+    height: 700px;
+    width: 100%;
+    margin-top: $mg-med;
+    margin-bottom: -50px;}
+
+.galeria {
+    display: none;
+    padding: 5px;
+}
+
+@media (min-width: $tablet) {
+    #carouselExample {
+        display: none;
+    }
+
+    .galeria {
+        display: flex;
+    }
+}
+
+.columnas {
+    flex: 25%;
+    padding: 5px;
+}
+
+.columnas img {
+    width: 100%;
+    margin-top: 5px;
+}

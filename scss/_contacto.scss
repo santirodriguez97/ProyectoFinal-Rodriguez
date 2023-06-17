@@ -1,0 +1,60 @@
+.contacto {
+    @include flex-column-center;
+}
+
+@media (min-width: $desktop) {
+    .contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+form {
+    @include flex-column-center;
+    gap: 10px;
+    background-color: $color-principal;
+    margin-top: $mg-med;
+    margin-bottom: $mg-med;
+    padding: 40px;
+
+    .controles {
+        @include flex-column-center;
+        border: 1px solid $color-terciario;
+        padding: 10px;
+    }
+}
+
+.botones {
+    width: 150px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.boton-enviar {
+    @extend .botones;
+    background-color: $color-terciario;
+    margin-bottom: $mg-min;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+.boton-borrar {
+    @extend .botones;
+
+    &:hover {
+        background-color: $color-terciario;
+    }
+}
+
+.mapa {
+    margin-bottom: $mg-med;
+}
+
+iframe {
+    max-width: 100%;
+}
